@@ -327,7 +327,7 @@ if df_resumen is not None and course_ids:
                 st.dataframe(pd.DataFrame(result['Estudiantes Otros Estados']) if result['Estudiantes Otros Estados'] else pd.DataFrame(), use_container_width=True)
             with tabs[3]:
                 st.dataframe(pd.DataFrame(result['Otros Roles']) if result['Otros Roles'] else pd.DataFrame(), use_container_width=True)
-            st.divider()
+            # st.divider()
     else:
         st.success(f"Se procesaron {len(df_resumen)} cursos.")
         st.dataframe(df_resumen, use_container_width=True)
